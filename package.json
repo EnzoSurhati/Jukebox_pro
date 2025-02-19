@@ -4,8 +4,27 @@
   "description": "Introducing Jukebox Pro, the successor to Jukebox! Users will now need to make an account and log in before they are able to manage their playlists.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seed.js",
+    "dev": "nodemon server.js"
+  },
+  "prisma": {
+    "seed": "node seed.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "@prisma/client": "^6.4.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9",
+    "prisma": "^6.4.0"
+  }
 }
